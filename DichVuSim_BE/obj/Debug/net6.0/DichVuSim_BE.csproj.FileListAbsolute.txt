@@ -64,4 +64,6 @@
 /Users/quanganh/Downloads/DichVuSim_BE/DichVuSim_BE/obj/Debug/net6.0/DichVuSim_BE.pdb
 /Users/quanganh/Downloads/DichVuSim_BE/DichVuSim_BE/obj/Debug/net6.0/DichVuSim_BE.genruntimeconfig.cache
 /Users/quanganh/Downloads/DichVuSim_BE/DichVuSim_BE/obj/Debug/net6.0/ref/DichVuSim_BE.dll
+/Users/quanganh/Downloads/DichVuSim_BE/DichVuSim_BE/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/quanganh/Downloads/DichVuSim_BE/DichVuSim_BE/bin/Debug/net6.0/System.Net.WebSockets.WebSocketProtocol.dll
 /Users/quanganh/Downloads/DichVuSim_BE/DichVuSim_BE/obj/Debug/net6.0/DichVuSim_BE.csproj.CopyComplete

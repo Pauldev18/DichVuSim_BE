@@ -1,24 +1,34 @@
 ﻿<Properties StartupConfiguration="{EE60E1D3-C6D9-4270-8270-838488BC8690}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.DichVuSim__BE PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DichVuSim_BE/Program.cs">
+    <Files>
+      <File FileName="DichVuSim_BE/appsettings.json" Line="7" Column="32" />
+      <File FileName="DichVuSim_BE/Models/GiaoDich.cs" Line="1" Column="1" />
+      <File FileName="DichVuSim_BE/Models/PhanHoi.cs" Line="1" Column="1" />
+      <File FileName="DichVuSim_BE/Models/VMchargerDBContext.cs" Line="1" Column="1" />
+      <File FileName="DichVuSim_BE/Models/ThanhToanHoaDon.cs" Line="1" Column="1" />
+      <File FileName="DichVuSim_BE/Models/NguoiDung.cs" Line="22" Column="44" />
+      <File FileName="DichVuSim_BE/Controllers/NguoiDungController.cs" Line="23" Column="34" />
+      <File FileName="DichVuSim_BE/Program.cs" Line="11" Column="83" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DichVuSim_BE" expanded="True">
             <Node name="DichVuSim_BE" expanded="True">
-              <Node name="Dependencies" expanded="True" selected="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.DichVuSim__BE PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>

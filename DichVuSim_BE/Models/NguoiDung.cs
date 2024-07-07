@@ -9,7 +9,8 @@ namespace DichVuSim_BE.Models
         {
             DichVuNguoiDungs = new HashSet<DichVuNguoiDung>();
             GiaoDiches = new HashSet<GiaoDich>();
-            PhanHois = new HashSet<PhanHoi>();
+            PhanHoiReceivers = new HashSet<PhanHoi>();
+            PhanHoiSenders = new HashSet<PhanHoi>();
             ThanhToanHoaDons = new HashSet<ThanhToanHoaDon>();
         }
 
@@ -25,7 +26,8 @@ namespace DichVuSim_BE.Models
 
         public virtual ICollection<DichVuNguoiDung> DichVuNguoiDungs { get; set; }
         public virtual ICollection<GiaoDich> GiaoDiches { get; set; }
-        public virtual ICollection<PhanHoi> PhanHois { get; set; }
+        public virtual ICollection<PhanHoi> PhanHoiReceivers { get; set; }
+        public virtual ICollection<PhanHoi> PhanHoiSenders { get; set; }
         public virtual ICollection<ThanhToanHoaDon> ThanhToanHoaDons { get; set; }
     }
 }

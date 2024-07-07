@@ -27,7 +27,6 @@ namespace DichVuSim_BE.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=VMchargerDB;User ID=sa;Password=Pauldev182@;Integrated Security=False");
             }
         }
@@ -174,7 +173,7 @@ namespace DichVuSim_BE.Models
             modelBuilder.Entity<PhanHoi>(entity =>
             {
                 entity.HasKey(e => e.MaPhanHoi)
-                    .HasName("PK__PhanHoi__3458D20F0D0E659F");
+                    .HasName("PK__PhanHoi__3458D20FADBAE4FF");
 
                 entity.ToTable("PhanHoi");
 
@@ -186,10 +185,17 @@ namespace DichVuSim_BE.Models
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
 
-                entity.HasOne(d => d.MaNguoiDungNavigation)
-                    .WithMany(p => p.PhanHois)
-                    .HasForeignKey(d => d.MaNguoiDung)
-                    .HasConstraintName("FK__PhanHoi__MaNguoi__4F7CD00D");
+                entity.HasOne(d => d.Receiver)
+                    .WithMany(p => p.PhanHoiReceivers)
+                    .HasForeignKey(d => d.ReceiverId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__PhanHoi__Receive__72C60C4A");
+
+                entity.HasOne(d => d.Sender)
+                    .WithMany(p => p.PhanHoiSenders)
+                    .HasForeignKey(d => d.SenderId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__PhanHoi__SenderI__71D1E811");
             });
 
             modelBuilder.Entity<ThanhToanHoaDon>(entity =>
